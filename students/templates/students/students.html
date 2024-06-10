@@ -1,0 +1,9 @@
+{% extends 'students/layout.html' %}
+
+{% block body %}
+    <ol>
+       {% for student in students %}
+        <li>{{student.name}}, joined {{student.date_joined}}</li>
+       {% endfor %}
+    </ol>
+{% endblock %}

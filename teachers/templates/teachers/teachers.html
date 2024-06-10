@@ -1,0 +1,10 @@
+{% extends 'teachers/layout.html' %}
+
+
+    {% block body %}
+    <ol>
+        {% for teacher in teachers %}
+            <li>{{teacher.name}}, joined {{teacher.date_joined}}</li>
+        {% endfor %}
+    </ol>
+    {% endblock %}

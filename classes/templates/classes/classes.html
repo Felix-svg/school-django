@@ -1,0 +1,10 @@
+{% extends 'classes/layout.html' %}
+
+
+{% block body %}
+<ol>
+    {% for class in classes %}
+    <li>{{class.name}} taught by {{class.teacher}}</li>
+    {% endfor %}
+</ol>
+{% endblock %}
